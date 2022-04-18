@@ -1,3 +1,353 @@
-@import "/Sass/Variables/index.scss";
-@import "/Sass/Commun/index.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+$fundo: #1a1b1f;
+$CorSele: #004eff;
+$FunoMenuOpen: rgba(26,27,31,.9);
+$CorFont: white;
+$Youtube: #bb0000;
+$SpotiFy: #7ab800;
+$Twitch: #6441a5;
+$Insta:#e1306c;
 
+
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: white;
+        border-radius: 30px;
+        border: 1px solid #1f2633;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: #1f2633;
+        border-radius: 30px;
+    }
+
+
+body{
+    background-color: #1f2633;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+
+.js .header-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: $fundo;
+    height:64px;
+    }
+
+    .js .header-nav .container{
+        height:100%;
+        }
+    
+    /*imagem da nav*/
+    .header-nav__logo{
+        display:inline-block;
+        max-width:350px;
+        height:50px;
+        position:relative;
+        top:10px;
+        z-index:20;
+        }
+    
+        /*logo*/
+    .header-nav__logo img{
+            max-width:100%;
+            height:100%;
+        }
+
+    
+    .header-nav__hamburgger{
+            display:none;
+        }
+    
+    .js .header-nav__hamburgger{
+        display:inline-block;
+        float: right;
+        height:100%;
+        border:none;
+        background:transparent;
+        color:#fff;
+        font-size:2em;
+        padding:0 .5em;
+        }
+        /* focu no hamburgger/menu
+        .js .header-nav__hamburgger:focus,.js .header-nav__hamburgger:hover{
+            background:#74aea5;
+            }*/
+            .header-nav__menu a .bi{
+                display: none;
+            }
+
+
+            @media screen and (min-width:1037px){
+                .js .header-nav__hamburgger{
+                    display:none;
+                }
+                .header-nav__menu{
+                    list-style:none;
+                    margin:0;
+                    padding:0;
+                }
+                .header-nav__menu a{
+                    text-decoration: none;
+                    color:#fff;
+                    display:block;
+                    font-size:1.5em;
+                    padding:1em;
+                    transition: all .1s linear;
+                }
+
+
+                .header-nav__menu a:hover{
+                    color:$CorSele;
+                }
+
+            }
+
+            /* nos mida screen adapitar o numero de px a pagina */
+            @media screen and (max-width:1036px){
+
+                .header-nav__menu a{
+                    text-decoration: none;
+                    color:#fff;
+                    display:block;
+                    font-size:1.5em;
+                    padding:1em;
+                    transition: all .1s linear;
+                }
+
+
+                .header-nav__menu a:hover{
+                    color:$CorSele;
+                }
+
+                .header-nav__menu a .bi{
+                    display:inline;
+                }
+
+                .header-nav__menu{
+                    list-style:none;
+                }
+
+                .js .header-nav__menu{
+                    background: $FunoMenuOpen;
+                    position:fixed;
+                    z-index:10;
+                    top:60px;
+                    left:-100%;
+                    width:65%;
+                    height: 100%;
+                    bottom:0;
+                    transition:left .3s ease-out;
+                }
+
+                .js .header-nav__menu .header-nav__menu-item{
+                    display: block;
+                }
+                .menu-opened .header-nav__menu{
+                    display:block;
+                }
+            }
+            @media screen and (max-width:1036px){
+                .menu-opened .header-nav__menu{
+                    left:0;
+                    
+                }
+                    }
+                    @media screen and (min-width:680px){
+    .header-nav__menu{
+        float:right;
+        height:50px;
+    }
+    .header-nav__menu,.header-nav__menu li{
+        display:inline-block;
+    }
+    .header-nav__menu li a{
+        border-top:none;
+        transition:all .3s ease-in-out;
+        padding:15px;
+    }
+    /*.header-nav__menu li a:hover{
+        -webkit-transform:translateY(.5em);
+        transform:translateY(.5em);
+        box-shadow:0 5px 15px -10px #000;
+    }*/
+}
+
+
+.anunc{
+    img{
+        margin-top: 65px;
+        height:200px;
+        width:95%;
+        border-radius: 10px;
+    }
+}
+
+
+
+.Center{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    .Center-card{
+
+        .card {
+        box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+        width: 150px;
+        height: 150px;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        position: relative;
+        transition: all .4s linear;
+        
+            img{
+            width: 150px;
+            height: 150px;
+            border-radius: 20px ;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 10;
+            transition: all .4s linear;
+            background-color: white;
+        }
+
+        &:hover img{
+            margin-top: -52px;
+        }
+
+        a{
+            position: absolute;
+            z-index: 1;
+            bottom:1px;
+            left: 35px;
+            font-weight: 600;
+            transition: all .1s linear;
+
+            &:hover{
+                color:#6441a5;
+            }
+        }
+    }
+}
+}
+
+.live{
+
+    li{
+        display: inline-block;
+        border: 1px solid $CorSele;
+        border-radius: 10px;
+        padding: 5px;
+        margin-left: 25px;
+        margin-top:15px ;
+        transition: all .2s linear;
+        
+
+        &:nth-child(1):hover{
+            
+            background-color: $Youtube;
+            box-shadow: 0px 0px 20px 15px #bb0000;
+            box-shadow: 0px 0px 30px 3px #bb0000;
+            border: 1px solid transparent;
+            a{
+                color: white;
+            }
+        }
+        &:nth-child(2):hover{
+            
+            background-color: $Twitch;
+            box-shadow: 0px 0px 20px 15px #6441a5;
+            box-shadow: 0px 0px 30px 3px #6441a5;
+            border: 1px solid transparent;
+            a{
+                color: white;
+            }
+        }
+        &:nth-child(3):hover{
+            background-color: $Insta;
+            box-shadow: 0px 0px 20px 15px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            box-shadow: 0px 0px 30px 3px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            border: 1px solid transparent;
+            a{
+                color: white;
+            }
+        }
+    }
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+.container-redes{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left:50px;
+    .rede{
+        font-weight: 500;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin: 0 3px;
+        background-color: rgba(0,0,0,0.3);
+        overflow: hidden;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease-out;
+
+        &:nth-child(1):hover{
+            width: 130px;
+            a{
+                color: $Youtube;
+                text-decoration: none;
+            }
+        }
+
+        &:nth-child(2):hover{
+            width: 140px;
+            a{
+                color: $Insta;
+                text-decoration: none;
+            }
+        }
+
+        &:nth-child(3):hover{
+            width: 120px;
+            a{
+                color: $SpotiFy;
+                text-decoration: none;
+            }
+        }
+
+        &:nth-child(4):hover{
+            width: 120px;
+            a{
+                color: $Twitch;
+                text-decoration: none;
+            }
+        }
+        
+
+        .rede-link{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50px;
+            transition: all 0.3s ease-out;
+        }
+        
+    }
+}
