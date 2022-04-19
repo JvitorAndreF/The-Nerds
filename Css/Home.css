@@ -172,18 +172,18 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  .Podts .desktop .card, .Noticies .desktop .card {
+  .Podts .desktop .card, .Noticies .desktop .card, .Heros .desktop .card {
     display: none;
   }
-  .Podts .mobile .card, .Noticies .mobile .card {
+  .Podts .mobile .card, .Noticies .mobile .card, .Heros .mobile .card {
     display: visible;
   }
 }
 @media screen and (min-width: 601px) {
-  .Podts .desktop .card, .Noticies .desktop .card {
+  .Podts .desktop .card, .Noticies .desktop .card, .Heros .desktop .card {
     display: visible;
   }
-  .Podts .mobile, .Noticies .mobile {
+  .Podts .mobile, .Noticies .mobile, .Heros .mobile {
     display: none;
   }
 }
@@ -409,6 +409,110 @@ a {
 }
 .Podts .mobile .card span .btn:nth-child(3):hover, .Noticies .mobile .card span .btn:nth-child(3):hover {
   color: #7ab800;
+}
+
+.shop {
+  width: 98%;
+  margin: auto;
+}
+.shop .shop-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shop .shop-itens .card {
+  background-color: #1a1b1f;
+  margin: 5px auto;
+}
+.shop .shop-itens .card a {
+  width: 60%;
+  margin: 0 auto 15px;
+}
+
+.Heros {
+  width: 98%;
+  margin: auto;
+}
+.Heros .desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Heros .desktop .card {
+  margin: 15px auto;
+  color: white;
+  background-color: #1a1b1f;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.Heros .desktop .card img {
+  width: 70%;
+  height: 33%;
+  margin: 5px auto;
+  border-radius: 35px;
+  filter: grayscale(80%);
+  transition: all 0.2s linear;
+}
+.Heros .desktop .card img:hover {
+  filter: grayscale(0);
+}
+.Heros .desktop .card span {
+  text-align: center;
+}
+.Heros .mobile {
+  width: 95%;
+  margin: auto;
+}
+.Heros .mobile .card {
+  border-radius: 5px;
+  background-color: #1a1b1f;
+  margin: auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.Heros .mobile .card img {
+  width: 70%;
+  height: 33%;
+  margin: 5px auto;
+  border-radius: 35px;
+  filter: grayscale(80%);
+  transition: all 0.2s linear;
+}
+.Heros .mobile .card img:hover {
+  filter: grayscale(0);
+}
+.Heros span {
+  text-align: center;
+}
+.Heros span a {
+  transition: all 0.2s linear;
+}
+.Heros span a:hover {
+  color: white;
+}
+
+.foot .foot-guia {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.foot .foot-guia div {
+  width: 30%;
+}
+.foot .foot-guia div li {
+  color: #004eff;
+  list-style: none;
+}
+.foot .foot-guia div li a {
+  color: #004eff;
+  transition: all 0.2s linear;
+}
+.foot .foot-guia div li a:hover {
+  color: white;
+}
+.foot img {
+  width: 20px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=Home.css.map */

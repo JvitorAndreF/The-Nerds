@@ -191,7 +191,7 @@ body{
 }
 
 @media screen and (max-width: 600px){
-    .Podts, .Noticies{
+    .Podts, .Noticies, .Heros{
         .desktop{
             .card{
                 display: none;
@@ -206,7 +206,7 @@ body{
 }
 
 @media screen and (min-width: 601px){
-    .Podts, .Noticies{
+    .Podts, .Noticies, .Heros{
         .desktop{
             .card{
                 display: visible;
@@ -492,3 +492,126 @@ a{
     }
 }
 
+.shop{
+    width: 98%;
+    margin: auto;
+
+    .shop-itens{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card{
+            background-color: $fundo;
+            margin: 5px auto;
+        
+        a{
+            width: 60%;
+            margin: 0 auto 15px;
+        }
+        }
+    }
+}
+
+.Heros{
+    width: 98%;
+    margin: auto;
+    .desktop{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .card {
+            margin: 15px auto;
+            color: white;
+            background-color: $fundo;
+            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+
+
+            img{
+                width: 70%;
+                height: 33%;
+                margin: 5px auto;
+                border-radius: 35px;
+                filter: grayscale(80%);
+                transition: all .2s linear;
+
+                &:hover{
+                    filter: grayscale(0)
+                }
+            }
+
+            span{
+                text-align: center;
+            }
+        }
+    }
+    .mobile{
+        width: 95%;
+        margin: auto;
+
+        .card{
+            border-radius: 5px;
+            background-color: $fundo;
+            margin: auto;
+            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+
+            img{
+                width: 70%;
+                height: 33%;
+                margin: 5px auto;
+                border-radius: 35px;
+                filter: grayscale(80%);
+                transition: all .2s linear;
+
+                &:hover{
+                    filter: grayscale(0)
+                }
+            }
+        }
+    }
+    span{
+        text-align: center;
+
+        a{
+            transition: all .2s linear;
+
+            &:hover{
+                color: white;
+            }
+        }
+
+        
+    }
+}
+
+.foot{
+    .foot-guia{
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+        div{
+        width: 30%;
+
+        li{
+            color: #004eff;
+            list-style: none;
+            
+            a{
+                color: #004eff;
+                transition: all .2s linear;
+            &:hover{
+                color: white;
+            }
+        }
+        }
+    }
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+}
