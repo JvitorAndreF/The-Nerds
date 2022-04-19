@@ -167,23 +167,23 @@ body {
   }*/
 }
 @media screen and (max-width: 900px) {
-  .Podts .desktop .card:nth-child(3) {
+  .Podts .desktop .card:nth-child(3), .Noticies .desktop .card:nth-child(3) {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .Podts .desktop .card {
+  .Podts .desktop .card, .Noticies .desktop .card {
     display: none;
   }
-  .Podts .mobile .card {
+  .Podts .mobile .card, .Noticies .mobile .card {
     display: visible;
   }
 }
 @media screen and (min-width: 601px) {
-  .Podts .desktop .card {
+  .Podts .desktop .card, .Noticies .desktop .card {
     display: visible;
   }
-  .Podts .mobile {
+  .Podts .mobile, .Noticies .mobile {
     display: none;
   }
 }
@@ -335,19 +335,19 @@ a {
   transition: all 0.3s ease-out;
 }
 
-.Podts {
+.Podts, .Noticies {
   width: 98%;
   margin: auto;
 }
-.Podts .desktop {
+.Podts .desktop, .Noticies .desktop {
   display: flex;
   justify-content: space-between;
 }
-.Podts .desktop .card {
+.Podts .desktop .card, .Noticies .desktop .card {
   background-color: #1a1b1f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
-.Podts .desktop .card .play .bi-play-fill {
+.Podts .desktop .card .play .bi-play-fill, .Noticies .desktop .card .play .bi-play-fill {
   position: absolute;
   color: transparent;
   height: 39%;
@@ -355,32 +355,35 @@ a {
   font-size: 100px;
   transition: all 0.2s linear;
 }
-.Podts .desktop .card .play .bi-play-fill:hover {
+.Podts .desktop .card .play .bi-play-fill:hover, .Noticies .desktop .card .play .bi-play-fill:hover {
   color: white;
 }
-.Podts .desktop .card span {
+.Podts .desktop .card span, .Noticies .desktop .card span {
   display: inline;
   text-align: center;
 }
-.Podts .desktop .card span .btn:nth-child(1):hover {
+.Podts .desktop .card span .Materia:hover, .Noticies .desktop .card span .Materia:hover {
+  color: white;
+}
+.Podts .desktop .card span .btn:nth-child(1):hover, .Noticies .desktop .card span .btn:nth-child(1):hover {
   color: #bb0000;
 }
-.Podts .desktop .card span .btn:nth-child(2) {
+.Podts .desktop .card span .btn:nth-child(2), .Noticies .desktop .card span .btn:nth-child(2) {
   margin: 0 15px 0 15px;
 }
-.Podts .desktop .card span .btn:nth-child(2):hover {
+.Podts .desktop .card span .btn:nth-child(2):hover, .Noticies .desktop .card span .btn:nth-child(2):hover {
   color: #6441a5;
 }
-.Podts .desktop .card span .btn:nth-child(3):hover {
+.Podts .desktop .card span .btn:nth-child(3):hover, .Noticies .desktop .card span .btn:nth-child(3):hover {
   color: #7ab800;
 }
-.Podts .mobile .card {
+.Podts .mobile .card, .Noticies .mobile .card {
   width: 95%;
   margin: auto;
   background-color: #1a1b1f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
-.Podts .mobile .card .play .bi-play-fill {
+.Podts .mobile .card .play .bi-play-fill, .Noticies .mobile .card .play .bi-play-fill {
   position: absolute;
   color: transparent;
   height: 39%;
@@ -388,23 +391,23 @@ a {
   font-size: 100px;
   transition: all 0.2s linear;
 }
-.Podts .mobile .card .play .bi-play-fill:hover {
+.Podts .mobile .card .play .bi-play-fill:hover, .Noticies .mobile .card .play .bi-play-fill:hover {
   color: white;
 }
-.Podts .mobile .card span {
+.Podts .mobile .card span, .Noticies .mobile .card span {
   display: inline;
   text-align: center;
 }
-.Podts .mobile .card span .btn:nth-child(1):hover {
+.Podts .mobile .card span .btn:nth-child(1):hover, .Noticies .mobile .card span .btn:nth-child(1):hover {
   color: #bb0000;
 }
-.Podts .mobile .card span .btn:nth-child(2) {
+.Podts .mobile .card span .btn:nth-child(2), .Noticies .mobile .card span .btn:nth-child(2) {
   margin: 0 15px 0 15px;
 }
-.Podts .mobile .card span .btn:nth-child(2):hover {
+.Podts .mobile .card span .btn:nth-child(2):hover, .Noticies .mobile .card span .btn:nth-child(2):hover {
   color: #6441a5;
 }
-.Podts .mobile .card span .btn:nth-child(3):hover {
+.Podts .mobile .card span .btn:nth-child(3):hover, .Noticies .mobile .card span .btn:nth-child(3):hover {
   color: #7ab800;
 }
 
