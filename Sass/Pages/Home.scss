@@ -141,7 +141,7 @@ body{
                     z-index:10;
                     top:60px;
                     left:-100%;
-                    width:65%;
+                    width:70%;
                     height: 100%;
                     bottom:0;
                     transition:left .3s ease-out;
@@ -193,7 +193,7 @@ body{
 
 
 .Center{
-    display: flex;
+    //display: flex;
     width: 95%;
     margin: auto;
     .Center-card{
@@ -207,7 +207,7 @@ body{
         justify-content: center;
         position: relative;
         transition: all .4s linear;
-        
+        float: right;
             img{
             width: 150px;
             height: 150px;
@@ -240,14 +240,18 @@ body{
 }
 
 .live{
-
+        margin: 0;
+        padding: 0;
+    
     li{
-        display: inline-block;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin-left: 15px;
         border: 1px solid $CorSele;
         border-radius: 10px;
         padding: 5px;
-        margin-left: 25px;
-        margin-top:15px ;
+        //margin-left: 25px;
+        //margin-top:15px ;
         transition: all .2s linear;
         
 

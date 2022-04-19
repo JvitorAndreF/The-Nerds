@@ -125,7 +125,7 @@ body {
     z-index: 10;
     top: 60px;
     left: -100%;
-    width: 65%;
+    width: 70%;
     height: 100%;
     bottom: 0;
     transition: left 0.3s ease-out;
@@ -174,7 +174,6 @@ body {
 }
 
 .Center {
-  display: flex;
   width: 95%;
   margin: auto;
 }
@@ -187,6 +186,7 @@ body {
   justify-content: center;
   position: relative;
   transition: all 0.4s linear;
+  float: right;
 }
 .Center .Center-card .card img {
   width: 150px;
@@ -213,13 +213,17 @@ body {
   color: #6441a5;
 }
 
+.live {
+  margin: 0;
+  padding: 0;
+}
 .live li {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-left: 15px;
   border: 1px solid #004eff;
   border-radius: 10px;
   padding: 5px;
-  margin-left: 25px;
-  margin-top: 15px;
   transition: all 0.2s linear;
 }
 .live li:nth-child(1):hover {
