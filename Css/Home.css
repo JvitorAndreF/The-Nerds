@@ -166,6 +166,27 @@ body {
       box-shadow:0 5px 15px -10px #000;
   }*/
 }
+@media screen and (max-width: 900px) {
+  .Podts .desktop .card:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Podts .desktop .card {
+    display: none;
+  }
+  .Podts .mobile .card {
+    display: visible;
+  }
+}
+@media screen and (min-width: 601px) {
+  .Podts .desktop .card {
+    display: visible;
+  }
+  .Podts .mobile {
+    display: none;
+  }
+}
 .anunc img {
   margin-top: 65px;
   height: 200px;
@@ -262,7 +283,6 @@ a {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-left: 43px;
 }
 .container-redes .rede {
   font-weight: 500;
@@ -313,6 +333,79 @@ a {
   line-height: 40px;
   border-radius: 50px;
   transition: all 0.3s ease-out;
+}
+
+.Podts {
+  width: 98%;
+  margin: auto;
+}
+.Podts .desktop {
+  display: flex;
+  justify-content: space-between;
+}
+.Podts .desktop .card {
+  background-color: #1a1b1f;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.Podts .desktop .card .play .bi-play-fill {
+  position: absolute;
+  color: transparent;
+  height: 39%;
+  left: 100px;
+  font-size: 100px;
+  transition: all 0.2s linear;
+}
+.Podts .desktop .card .play .bi-play-fill:hover {
+  color: white;
+}
+.Podts .desktop .card span {
+  display: inline;
+  text-align: center;
+}
+.Podts .desktop .card span .btn:nth-child(1):hover {
+  color: #bb0000;
+}
+.Podts .desktop .card span .btn:nth-child(2) {
+  margin: 0 15px 0 15px;
+}
+.Podts .desktop .card span .btn:nth-child(2):hover {
+  color: #6441a5;
+}
+.Podts .desktop .card span .btn:nth-child(3):hover {
+  color: #7ab800;
+}
+.Podts .mobile .card {
+  width: 95%;
+  margin: auto;
+  background-color: #1a1b1f;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.Podts .mobile .card .play .bi-play-fill {
+  position: absolute;
+  color: transparent;
+  height: 39%;
+  left: 100px;
+  font-size: 100px;
+  transition: all 0.2s linear;
+}
+.Podts .mobile .card .play .bi-play-fill:hover {
+  color: white;
+}
+.Podts .mobile .card span {
+  display: inline;
+  text-align: center;
+}
+.Podts .mobile .card span .btn:nth-child(1):hover {
+  color: #bb0000;
+}
+.Podts .mobile .card span .btn:nth-child(2) {
+  margin: 0 15px 0 15px;
+}
+.Podts .mobile .card span .btn:nth-child(2):hover {
+  color: #6441a5;
+}
+.Podts .mobile .card span .btn:nth-child(3):hover {
+  color: #7ab800;
 }
 
 /*# sourceMappingURL=Home.css.map */
