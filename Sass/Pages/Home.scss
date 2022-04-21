@@ -1,3 +1,14 @@
+@keyframes anda {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(100px)
+    }
+    100% {
+        transform: scale(200px)
+    }
+}
 
 @media screen and (max-width: 900px){
     .Podts, .Noticies{
@@ -39,6 +50,17 @@
     }
 }
 
+.intro{
+    position: fixed;
+    z-index: 11;
+    top: 50px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    animation: anda .5s linear;
+    background-color: red;
+}
+
 .anunc{
     img{
         margin-top: 65px;
@@ -51,6 +73,7 @@
 .Center{
     width: 95%;
     margin: auto;
+    
     .Center-card{
 
         .card {
@@ -73,18 +96,20 @@
             transition: all .4s linear;
             background-color: white;
         }
-
+        
         &:hover img{
             margin-top: -52px;
         }
 
         a{
+            color: red;
             position: absolute;
             z-index: 1;
             bottom:1px;
             left: 35px;
             font-weight: 600;
             transition: all .1s linear;
+            
 
             &:hover{
                 color:$CorSele;
@@ -380,6 +405,7 @@ li{
 }
 
 .foot{
+    position: relative;
     .foot-guia{
     width: 99%;
     margin: auto;
@@ -405,5 +431,16 @@ li{
 img{
     width: 20px;
     height: 20px;
+}
+.scroll{
+font-size: 40px;
+position: fixed;
+scroll-behavior: smooth;
+bottom: 5px;
+right: 10px;
+transition: all .2s linear;
+    &:hover{
+        color: #ff69b4;
+    }
 }
 }

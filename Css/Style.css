@@ -163,6 +163,17 @@ body {
     padding: 15px;
   }
 }
+@keyframes anda {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(100px);
+  }
+  100% {
+    transform: scale(200px);
+  }
+}
 @media screen and (max-width: 900px) {
   .Podts .desktop .card:nth-child(3), .Noticies .desktop .card:nth-child(3) {
     display: none;
@@ -184,6 +195,17 @@ body {
     display: none;
   }
 }
+.intro {
+  position: fixed;
+  z-index: 11;
+  top: 50px;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  animation: anda 0.5s linear;
+  background-color: red;
+}
+
 .anunc img {
   margin-top: 65px;
   height: 200px;
@@ -220,6 +242,7 @@ body {
   margin-top: -52px;
 }
 .Center .Center-card .card a {
+  color: red;
   position: absolute;
   z-index: 1;
   bottom: 1px;
@@ -501,6 +524,9 @@ body {
   color: white;
 }
 
+.foot {
+  position: relative;
+}
 .foot .foot-guia {
   width: 99%;
   margin: auto;
@@ -524,6 +550,17 @@ body {
 .foot img {
   width: 20px;
   height: 20px;
+}
+.foot .scroll {
+  font-size: 40px;
+  position: fixed;
+  scroll-behavior: smooth;
+  bottom: 5px;
+  right: 10px;
+  transition: all 0.2s linear;
+}
+.foot .scroll:hover {
+  color: #ff69b4;
 }
 
 /*# sourceMappingURL=Style.css.map */
