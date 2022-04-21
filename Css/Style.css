@@ -525,6 +525,8 @@ body {
 }
 
 .foot {
+  width: 100%;
+  background-color: #1d1d1d;
   position: relative;
 }
 .foot .foot-guia {
@@ -555,7 +557,7 @@ body {
   font-size: 40px;
   position: fixed;
   scroll-behavior: smooth;
-  bottom: 5px;
+  bottom: 0;
   right: 10px;
   transition: all 0.2s linear;
 }
