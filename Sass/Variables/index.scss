@@ -11,6 +11,7 @@ $fundo: #1f2633;
 $FunoMenuOpen: rgba(26,27,31,.9);
 
 
+
 //hover
 $CorSele: #004eff;
 
@@ -30,8 +31,50 @@ a{
 }
 
 
+
 //card
 @mixin card() {
     box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
     background-color: $fundo;
+}
+
+.header-nav{
+label {
+    margin-right: 25px;
+}
+
+label span {
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+label span:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all .2s linear;
+    background-image: url('../Images/batman-logo-png-2033-32x32.ico');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label input:checked+span::before {
+    transform: translatex(30px);
+    background-image: url('../Images/superman-logo-png-1526-32x32.ico');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 }

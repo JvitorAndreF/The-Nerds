@@ -21,6 +21,21 @@ font-size: 18px;
 font-family: 'Montserrat';
 }
 
+.light-theme{
+background-color: $CorFont;
+color:$fundo ;
+    
+    .card{
+        color: white;
+    }
+
+    .foot{
+        h4,p{
+            color: white;
+        }
+    }
+}
+
 .menu-active{
     background-color: rgba(0,0,0,0.9);
 }
