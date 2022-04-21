@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+//Cores
+$Youtube: #bb0000;
+$SpotiFy: #7ab800;
+$Twitch: #6441a5;
+$Insta:#e1306c;
+$CorFont: white;
+$fundo: #1f2633;
+$FunoMenuOpen: rgba(26,27,31,.9);
+
+
+//hover
+$CorSele: #004eff;
+
+
+//Padrões
+a{
+    text-decoration: none;
+}
+
+
+//Mixins
+@mixin shadow($cor) {
+    background-color: $cor;
+    box-shadow: 0px 0px 20px 15px $cor;
+    box-shadow: 0px 0px 30px 3px $cor;
+    border: 1px solid transparent;
+}
+
+
+//card
+@mixin card() {
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+    background-color: $fundo;
+}

@@ -1,184 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-$fundo: #1a1b1f;
-$CorSele: #004eff;
-$FunoMenuOpen: rgba(26,27,31,.9);
-$CorFont: white;
-$Youtube: #bb0000;
-$SpotiFy: #7ab800;
-$Twitch: #6441a5;
-$Insta:#e1306c;
-
-
-    ::-webkit-scrollbar{
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        background-color: white;
-        border-radius: 30px;
-        border: 1px solid #1f2633;
-    }
-
-    ::-webkit-scrollbar-track{
-        background-color: #1f2633;
-        border-radius: 30px;
-    }
-
-
-body{
-    background-color: #1f2633;
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat';
-}
-
-
-.js .header-nav{
-    position: fixed;
-    width: 100%;
-    z-index: 20;
-    background-color: $fundo;
-    height:64px;
-    }
-
-    .js .header-nav .container{
-        height:100%;
-        }
-    
-    /*imagem da nav*/
-    .header-nav__logo{
-        display:inline-block;
-        max-width:350px;
-        height:50px;
-        position:relative;
-        top:10px;
-        z-index:20;
-        }
-    
-        /*logo*/
-    .header-nav__logo img{
-            max-width:100%;
-            height:100%;
-        }
-
-    
-    .header-nav__hamburgger{
-            display:none;
-        }
-    
-    .js .header-nav__hamburgger{
-        display:inline-block;
-        float: right;
-        height:100%;
-        border:none;
-        background:transparent;
-        color:#fff;
-        font-size:2em;
-        padding:0 .5em;
-        }
-        /* focu no hamburgger/menu
-        .js .header-nav__hamburgger:focus,.js .header-nav__hamburgger:hover{
-            background:#74aea5;
-            }*/
-            .header-nav__menu a .bi{
-                display: none;
-            }
-
-
-            @media screen and (min-width:1037px){
-                .js .header-nav__hamburgger{
-                    display:none;
-                }
-                .header-nav__menu{
-                    list-style:none;
-                    margin:0;
-                    padding:0;
-                }
-                .header-nav__menu a{
-                    text-decoration: none;
-                    color:#fff;
-                    display:block;
-                    font-size:1.5em;
-                    padding:1em;
-                    transition: all .1s linear;
-                }
-
-
-                .header-nav__menu a:hover{
-                    color:$CorSele;
-                }
-
-            }
-
-            /* nos mida screen adapitar o numero de px a pagina */
-            @media screen and (max-width:1036px){
-
-                .header-nav__menu a{
-                    text-decoration: none;
-                    color:#fff;
-                    display:block;
-                    font-size:1.5em;
-                    padding:1em;
-                    transition: all .1s linear;
-                }
-
-
-                .header-nav__menu a:hover{
-                    color:$CorSele;
-                }
-
-                .header-nav__menu a .bi{
-                    display:inline;
-                }
-
-                .header-nav__menu{
-                    list-style:none;
-                }
-
-                .js .header-nav__menu{
-                    background: $FunoMenuOpen;
-                    position:fixed;
-                    z-index:10;
-                    top:60px;
-                    left:-100%;
-                    width:70%;
-                    height: 100%;
-                    bottom:0;
-                    transition:left .3s ease-out;
-                }
-
-                .js .header-nav__menu .header-nav__menu-item{
-                    display: block;
-                }
-                .menu-opened .header-nav__menu{
-                    display:block;
-                }
-            }
-            @media screen and (max-width:1036px){
-                .menu-opened .header-nav__menu{
-                    left:0;
-                    
-                }
-                    }
-                    @media screen and (min-width:680px){
-    .header-nav__menu{
-        float:right;
-        height:50px;
-    }
-    .header-nav__menu,.header-nav__menu li{
-        display:inline-block;
-    }
-    .header-nav__menu li a{
-        border-top:none;
-        transition:all .3s ease-in-out;
-        padding:15px;
-    }
-    /*.header-nav__menu li a:hover{
-        -webkit-transform:translateY(.5em);
-        transform:translateY(.5em);
-        box-shadow:0 5px 15px -10px #000;
-    }*/
-}
 
 @media screen and (max-width: 900px){
     .Podts, .Noticies{
@@ -229,10 +48,7 @@ body{
     }
 }
 
-
-
 .Center{
-    //display: flex;
     width: 95%;
     margin: auto;
     .Center-card{
@@ -271,66 +87,54 @@ body{
             transition: all .1s linear;
 
             &:hover{
-                color:#6441a5;
+                color:$CorSele;
             }
         }
     }
-}
 }
 
 .live{
-        margin: 0;
-        padding: 0;
-    
-    li{
-        display: inline-flex;
-        flex-wrap: nowrap;
-        margin-left: 15px;
-        border: 1px solid $CorSele;
-        border-radius: 10px;
-        padding: 5px;
-        //margin-left: 25px;
-        //margin-top:15px ;
-        transition: all .2s linear;
-        
+    margin: 0;
+    padding: 0;
 
-        &:nth-child(1):hover{
-            
-            background-color: $Youtube;
-            box-shadow: 0px 0px 20px 15px #bb0000;
-            box-shadow: 0px 0px 30px 3px #bb0000;
-            border: 1px solid transparent;
-            a{
-                color: white;
-            }
-        }
-        &:nth-child(2):hover{
-            
-            background-color: $Twitch;
-            box-shadow: 0px 0px 20px 15px #6441a5;
-            box-shadow: 0px 0px 30px 3px #6441a5;
-            border: 1px solid transparent;
-            a{
-                color: white;
-            }
-        }
-        &:nth-child(3):hover{
-            background-color: $Insta;
-            box-shadow: 0px 0px 20px 15px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-            box-shadow: 0px 0px 30px 3px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-            border: 1px solid transparent;
-            a{
-                color: white;
-            }
+li{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+    border: 1px solid $CorSele;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .2s linear;
+    
+
+    &:nth-child(1):hover{
+        @include shadow($Youtube);
+        @include shadow($Youtube);
+        @include shadow($Youtube);
+        a{
+            color: white;
         }
     }
-    
+    &:nth-child(2):hover{
+        @include shadow($Twitch);
+        @include shadow($Twitch);
+        @include shadow($Twitch);
+        a{
+            color: white;
+        }
+    }
+    &:nth-child(3):hover{
+        @include shadow($Insta);
+        @include shadow($Insta);
+        @include shadow($Insta);
+        a{
+            color: white;
+        }
+    }
 }
 
-
-a{
-    text-decoration: none;
 }
+
 .container-redes{
     display: flex;
     flex-wrap: nowrap;
@@ -352,7 +156,6 @@ a{
             width: 130px;
             a{
                 color: $Youtube;
-                text-decoration: none;
             }
         }
 
@@ -360,7 +163,6 @@ a{
             width: 140px;
             a{
                 color: $Insta;
-                text-decoration: none;
             }
         }
 
@@ -368,7 +170,6 @@ a{
             width: 120px;
             a{
                 color: $SpotiFy;
-                text-decoration: none;
             }
         }
 
@@ -376,7 +177,6 @@ a{
             width: 120px;
             a{
                 color: $Twitch;
-                text-decoration: none;
             }
         }
         
@@ -393,6 +193,7 @@ a{
         
     }
 }
+}
 
 .Podts, .Noticies{
     width: 98%;
@@ -403,9 +204,7 @@ a{
         justify-content: space-between;
         
         .card{
-            background-color: $fundo;
-            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
-
+            @include card();
             .play{
                 .bi-play-fill{
                     position: absolute;
@@ -451,8 +250,7 @@ a{
         .card{
             width: 95%;
             margin: auto;
-            background-color: $fundo;
-            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+            @include card();
 
             .play{
                 .bi-play-fill{
@@ -502,7 +300,7 @@ a{
         justify-content: space-between;
 
         .card{
-            background-color: $fundo;
+            @include card();
             margin: 5px auto;
         
         a{
@@ -525,9 +323,7 @@ a{
 
         .card {
             margin: 15px auto;
-            color: white;
-            background-color: $fundo;
-            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+            @include card();
 
 
             img{
@@ -554,9 +350,8 @@ a{
 
         .card{
             border-radius: 5px;
-            background-color: $fundo;
             margin: auto;
-            box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+            @include card();
 
             img{
                 width: 70%;
@@ -577,13 +372,10 @@ a{
 
         a{
             transition: all .2s linear;
-
             &:hover{
                 color: white;
             }
         }
-
-        
     }
 }
 

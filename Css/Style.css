@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+a {
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -19,6 +23,10 @@ body {
   color: white;
   font-size: 18px;
   font-family: "Montserrat";
+}
+
+.menu-active {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .js .header-nav {
@@ -64,10 +72,6 @@ body {
   padding: 0 0.5em;
 }
 
-/* focu no hamburgger/menu
-.js .header-nav__hamburgger:focus,.js .header-nav__hamburgger:hover{
-    background:#74aea5;
-    }*/
 .header-nav__menu a .bi {
   display: none;
 }
@@ -96,7 +100,6 @@ body {
     color: #004eff;
   }
 }
-/* nos mida screen adapitar o numero de px a pagina */
 @media screen and (max-width: 1036px) {
   .header-nav__menu a {
     text-decoration: none;
@@ -120,10 +123,10 @@ body {
   }
 
   .js .header-nav__menu {
-    background: rgba(26, 27, 31, 0.9);
+    background: #1f2633;
     position: fixed;
     z-index: 10;
-    top: 60px;
+    top: 64px;
     left: -100%;
     width: 70%;
     height: 100%;
@@ -159,12 +162,6 @@ body {
     transition: all 0.3s ease-in-out;
     padding: 15px;
   }
-
-  /*.header-nav__menu li a:hover{
-      -webkit-transform:translateY(.5em);
-      transform:translateY(.5em);
-      box-shadow:0 5px 15px -10px #000;
-  }*/
 }
 @media screen and (max-width: 900px) {
   .Podts .desktop .card:nth-child(3), .Noticies .desktop .card:nth-child(3) {
@@ -231,14 +228,13 @@ body {
   transition: all 0.1s linear;
 }
 .Center .Center-card .card a:hover {
-  color: #6441a5;
+  color: #004eff;
 }
-
-.live {
+.Center .live {
   margin: 0;
   padding: 0;
 }
-.live li {
+.Center .live li {
   display: inline-flex;
   flex-wrap: nowrap;
   margin-left: 15px;
@@ -247,44 +243,63 @@ body {
   padding: 5px;
   transition: all 0.2s linear;
 }
-.live li:nth-child(1):hover {
+.Center .live li:nth-child(1):hover {
+  background-color: #bb0000;
+  box-shadow: 0px 0px 20px 15px #bb0000;
+  box-shadow: 0px 0px 30px 3px #bb0000;
+  border: 1px solid transparent;
+  background-color: #bb0000;
+  box-shadow: 0px 0px 20px 15px #bb0000;
+  box-shadow: 0px 0px 30px 3px #bb0000;
+  border: 1px solid transparent;
   background-color: #bb0000;
   box-shadow: 0px 0px 20px 15px #bb0000;
   box-shadow: 0px 0px 30px 3px #bb0000;
   border: 1px solid transparent;
 }
-.live li:nth-child(1):hover a {
+.Center .live li:nth-child(1):hover a {
   color: white;
 }
-.live li:nth-child(2):hover {
+.Center .live li:nth-child(2):hover {
+  background-color: #6441a5;
+  box-shadow: 0px 0px 20px 15px #6441a5;
+  box-shadow: 0px 0px 30px 3px #6441a5;
+  border: 1px solid transparent;
+  background-color: #6441a5;
+  box-shadow: 0px 0px 20px 15px #6441a5;
+  box-shadow: 0px 0px 30px 3px #6441a5;
+  border: 1px solid transparent;
   background-color: #6441a5;
   box-shadow: 0px 0px 20px 15px #6441a5;
   box-shadow: 0px 0px 30px 3px #6441a5;
   border: 1px solid transparent;
 }
-.live li:nth-child(2):hover a {
+.Center .live li:nth-child(2):hover a {
   color: white;
 }
-.live li:nth-child(3):hover {
+.Center .live li:nth-child(3):hover {
   background-color: #e1306c;
-  box-shadow: 0px 0px 20px 15px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  box-shadow: 0px 0px 30px 3px linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  box-shadow: 0px 0px 20px 15px #e1306c;
+  box-shadow: 0px 0px 30px 3px #e1306c;
+  border: 1px solid transparent;
+  background-color: #e1306c;
+  box-shadow: 0px 0px 20px 15px #e1306c;
+  box-shadow: 0px 0px 30px 3px #e1306c;
+  border: 1px solid transparent;
+  background-color: #e1306c;
+  box-shadow: 0px 0px 20px 15px #e1306c;
+  box-shadow: 0px 0px 30px 3px #e1306c;
   border: 1px solid transparent;
 }
-.live li:nth-child(3):hover a {
+.Center .live li:nth-child(3):hover a {
   color: white;
 }
-
-a {
-  text-decoration: none;
-}
-
-.container-redes {
+.Center .container-redes {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
 }
-.container-redes .rede {
+.Center .container-redes .rede {
   font-weight: 500;
   display: inline-block;
   height: 40px;
@@ -297,35 +312,31 @@ a {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
 }
-.container-redes .rede:nth-child(1):hover {
+.Center .container-redes .rede:nth-child(1):hover {
   width: 130px;
 }
-.container-redes .rede:nth-child(1):hover a {
+.Center .container-redes .rede:nth-child(1):hover a {
   color: #bb0000;
-  text-decoration: none;
 }
-.container-redes .rede:nth-child(2):hover {
+.Center .container-redes .rede:nth-child(2):hover {
   width: 140px;
 }
-.container-redes .rede:nth-child(2):hover a {
+.Center .container-redes .rede:nth-child(2):hover a {
   color: #e1306c;
-  text-decoration: none;
 }
-.container-redes .rede:nth-child(3):hover {
+.Center .container-redes .rede:nth-child(3):hover {
   width: 120px;
 }
-.container-redes .rede:nth-child(3):hover a {
+.Center .container-redes .rede:nth-child(3):hover a {
   color: #7ab800;
-  text-decoration: none;
 }
-.container-redes .rede:nth-child(4):hover {
+.Center .container-redes .rede:nth-child(4):hover {
   width: 120px;
 }
-.container-redes .rede:nth-child(4):hover a {
+.Center .container-redes .rede:nth-child(4):hover a {
   color: #6441a5;
-  text-decoration: none;
 }
-.container-redes .rede .rede-link {
+.Center .container-redes .rede .rede-link {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -344,8 +355,8 @@ a {
   justify-content: space-between;
 }
 .Podts .desktop .card, .Noticies .desktop .card {
-  background-color: #1a1b1f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #1f2633;
 }
 .Podts .desktop .card .play .bi-play-fill, .Noticies .desktop .card .play .bi-play-fill {
   position: absolute;
@@ -380,8 +391,8 @@ a {
 .Podts .mobile .card, .Noticies .mobile .card {
   width: 95%;
   margin: auto;
-  background-color: #1a1b1f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #1f2633;
 }
 .Podts .mobile .card .play .bi-play-fill, .Noticies .mobile .card .play .bi-play-fill {
   position: absolute;
@@ -421,7 +432,8 @@ a {
   justify-content: space-between;
 }
 .shop .shop-itens .card {
-  background-color: #1a1b1f;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #1f2633;
   margin: 5px auto;
 }
 .shop .shop-itens .card a {
@@ -441,9 +453,8 @@ a {
 }
 .Heros .desktop .card {
   margin: 15px auto;
-  color: white;
-  background-color: #1a1b1f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #1f2633;
 }
 .Heros .desktop .card img {
   width: 70%;
@@ -465,9 +476,9 @@ a {
 }
 .Heros .mobile .card {
   border-radius: 5px;
-  background-color: #1a1b1f;
   margin: auto;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  background-color: #1f2633;
 }
 .Heros .mobile .card img {
   width: 70%;
@@ -515,4 +526,4 @@ a {
   height: 20px;
 }
 
-/*# sourceMappingURL=Home.css.map */
+/*# sourceMappingURL=Style.css.map */
