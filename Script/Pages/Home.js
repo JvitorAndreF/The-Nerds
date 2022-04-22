@@ -12,6 +12,7 @@
         $html.classList.toggle('menu-opened');
         $body.classList.toggle('menu-active');
     })
+
 })()
 
 window.scroll({

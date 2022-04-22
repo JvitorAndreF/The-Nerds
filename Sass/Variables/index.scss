@@ -10,7 +10,14 @@ $CorFont: white;
 $fundo: #1f2633;
 $FunoMenuOpen: rgba(26,27,31,.9);
 
-
+@mixin bi-play-fil(){
+    position: absolute;
+    color: transparent;
+    height: 39%;
+    left: 100px;
+    font-size: 100px;
+    transition: all .2s linear;
+}
 
 //hover
 $CorSele: #004eff;
